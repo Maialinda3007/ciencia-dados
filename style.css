@@ -15,25 +15,17 @@ body {
     margin: 0;
 }
 
-/* código omitido */
-
 header {
     background-color: var(--primary-color);
     text-align: center;
     padding: 1px;
 }
 
-/* código omitido */
-
-/* código omitido */
-
 h1 {
     font-size: 2rem;
     color: var(--bg-color);
-     font-weight: 700;
+    font-weight: 700;
 }
-
-/* código omitido */
 
 nav {
     display: flex;
@@ -41,16 +33,12 @@ nav {
     font-weight: 400;
 }
 
-/* código omitido */
-
 nav a {
     text-decoration: none;
     color: var(--bg-color);
-     margin: 0rem 2rem 1rem 0rem;
-     font-size: 1.2rem;
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
 }
-
-
 
 nav a:hover {
     text-decoration: underline;
@@ -60,19 +48,19 @@ nav a:hover {
 
 .graficos-container {
     margin: 5rem;
-   }
+}
 
-.graficos-container_texto {
+.graficos-container__texto {
     font-size: 1.3rem;
     text-align: center;
     padding: 2rem;
     border: var(--secondary-color) solid 2px;
-  }
+}
 
-  span {
+span {
     font-weight: bold;
     color: var(--secondary-color);
-   }
+}
 
 footer {
     display: flex;
