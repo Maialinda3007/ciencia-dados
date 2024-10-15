@@ -48,15 +48,15 @@ async function quantidadeUsuarios() {
         }
     },
     yaxis: {
-           tickfont:tickConfig,
-            title:{
-            text: 'bilhões de usuários ativos',
-            font: {
-                color: getCSS('--secondary-color')
-            }
-        }
-    }
-}
+      tickfont: tickConfig,
+      title: {
+          text: 'bilhões de usuários ativos',
+          font: {
+              color: getCSS('--secondary-color')
+          }
+      }
+  }
+    
     
 
   const grafico = document.createElement('div')
