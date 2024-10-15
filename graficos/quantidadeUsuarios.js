@@ -30,16 +30,9 @@ async function quantidadeUsuarios() {
              size: 30
          }
       },
-      xaxis:{
-          title:{
-            text:'nome das redes sociais'
-          }
-      },
-      yaxis:{
-
-      }
-
+      
     }
+      
     
   
     
