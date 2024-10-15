@@ -32,7 +32,10 @@ async function quantidadeUsuarios() {
       },
       xaxis:{
          title:{
-          text:'nome das redes sociais'
+          text:'nome das redes sociais',
+          font:{
+            color:getCSS(--secondary-color)
+          }
          }
       },
       yaxis:{
