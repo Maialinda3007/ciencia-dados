@@ -31,11 +31,8 @@ async function quantidadeUsuarios() {
          }
       },
       xaxis:{
-        tickfont:{
-        color:getCSS('--primary-color'),
-        size:16
-        family:getCSS('--font')
-        
+        tickfont:tickConfig,
+
         },
          title:{
           text:'nome das redes sociais',
@@ -45,6 +42,7 @@ async function quantidadeUsuarios() {
          }
       },
       yaxis:{
+        tickfont:tickConfig,
         title:{
           text:'bilhões de usuários ativos',
           font{
