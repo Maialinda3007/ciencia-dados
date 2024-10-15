@@ -31,6 +31,9 @@ async function quantidadeUsuarios() {
          }
       },
       xaxis: {
+        tickfont{
+          color:getCSS('-primary-color')
+        },
         title: {
             text: 'nome das redes sociais',
             font: {
