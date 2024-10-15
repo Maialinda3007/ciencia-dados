@@ -39,7 +39,9 @@ async function quantidadeUsuarios() {
         }
     },
     yaxis: {
-    
+      text: 'bilhões de usuários ativos',
+      
+      
     }
       
     }
