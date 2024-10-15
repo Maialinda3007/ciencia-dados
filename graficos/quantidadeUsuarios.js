@@ -30,28 +30,9 @@ async function quantidadeUsuarios() {
          size: 30
      }
       },
-      xaxis: {
-        tickfont{
-            color: getCSS('-primary-color'),
-            size: 16,
-            family:getCSS('--font')
-        },
-        title: {
-            text: 'nome das redes sociais',
-            font: {
-                color: getCSS('--secondary-color')
-            }
-        }
-    },
-    yaxis: {
-            text: 'bilhões de usuários ativos',
-            font: {
-                color: getCSS('--secondary-color')
-            }
-        }
-    }
-}
-  
+      
+      
+  }
   
     
 
