@@ -40,11 +40,12 @@ async function quantidadeUsuarios() {
     },
     yaxis: {
       text: 'bilhões de usuários ativos',
-      
-      
-    }
-      
-    }
+      font: {
+        color: getCSS('--secondary-color')
+             }
+           }
+      } 
+    
   
     
     const grafico = document.createElement('div')
