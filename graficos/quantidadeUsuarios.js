@@ -19,16 +19,17 @@ async function quantidadeUsuarios() {
     ]
 
     const layout = {
-      plot_bgcolor: getCSS('--bg-color')
+      plot_bgcolor: getCSS('--bg-color'),
+      paper_bgcolor:getCSS('--bg-color')
   }
     
     const grafico = document.createElement('div')
     grafico.className = 'grafico'
     document.getElementById('graficos-container').appendChild(grafico)
-    Ploty.newPlot(grafico, data,layout)
+    Ploty.newPlot(grafico, data, layout)
 
 }
-    
+     
         
     
   
