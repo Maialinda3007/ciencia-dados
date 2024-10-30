@@ -1,7 +1,7 @@
 import { getCSS,tickConfig } from "./common.js"
 
 async function quantidadeUsuarios() {
-    const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
+    const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json';
     const res = await fetch(url)
     const dados = await res.json()
     const nomeDasRedes = Object.keys(dados)
@@ -10,7 +10,7 @@ async function quantidadeUsuarios() {
     const data = [
       {
         x: 'nomeDasRedes',
-        y: quantidadeUsuarios,
+        y: 'quantidadeUsuarios',
         type: 'bar',
         marker: {
           color: getCSS('--primary-color')
