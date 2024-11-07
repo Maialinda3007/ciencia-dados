@@ -1,16 +1,16 @@
 import { getCSS,tickConfig } from "./common.js"
 
-async function quantidadeUsuariosPorRede() {
-    const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json';
+async function quantidadeUsuarios() {
+    const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const dadosNaEducacao = Object.keys(dados)
-    const quantidadeDePessoas = Object.values(dados)
+    const nomeDasRedes = Object.keys(dados)
+    const quantidadeUsuarios = Object.values(dados)
   
     const data = [
       {
-        x: 'dadosNaEducacao',
-        y: 'quantidadeDePessoas',
+        x: 'nomeDasRedes',
+        y: quantidadeUsuarios,
         type: 'bar',
         marker: {
           color: getCSS('--primary-color')
@@ -32,46 +32,45 @@ async function quantidadeUsuariosPorRede() {
       },
       xaxis:{
         tickfont:tickConfig,
-        title:{
-          text:'nome das redes sociais', 
+
+        },
+         title:{
+          text:'nome das redes sociais',
           font:{
             color:getCSS('--secondary-color')
-
+          }
+         }
+      },
+      yaxis:{
+        tickfont:tickConfig,
+        title:{
+          text:'bilhões de usuários ativos',
+          font{
+            color:getCSS('--secondary-color')
+          }
         }
-      }
-    },
-    yaxis:{
-      tickfont:tickConfig,
-      title:{
-        text:'bilhões de usuários ativos',
-        font{
-          color:getCSS('--secondary-color')
-        }
-      }
 
+      }
     }
-  }   
-         
-  const grafico = document.createElement('div')    
-  grafico.className = 'grafico'
+      
+    
+  
+    
+    const grafico = document.createElement('div')
+    grafico.className = 'grafico'
     document.getElementById('graficos-container').appendChild(grafico)
     Plotly.newPlot(grafico, data, layout)
 
 }
-        
-quantidadeUsuariosPorRede() 
-     
-    
-  
-    
-    
-    
      
         
     
   
    
+quantidadeUsuarios() 
+    
 
+  
   
   
     
